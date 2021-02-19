@@ -1,0 +1,2 @@
+C:\Users\yemo\projects\cpp\cppProject\cppStartWork\Debug\cppStartWork.exe
+C:\Users\yemo\projects\cpp\cppProject\cppStartWork\Debug\cppStartWork.pdb
