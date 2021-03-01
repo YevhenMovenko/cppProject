@@ -67,41 +67,135 @@
 //		printf("%s\n", alfabeta);
 //	}
 
-enum class Race {
-	Dinan,
-	Teklan,
-	Ivyn,
-	Moiran,
-	Camite,
-	Julian,
-	Aidan
-};
+//enum class Race {
+//	Dinan,
+//	Teklan,
+//	Ivyn,
+//	Moiran,
+//	Camite,
+//	Julian,
+//	Aidan
+//};
 
-int main() {
-	Race race = Race::Moiran;
-	switch (race) {
-	   case Race::Dinan: {
-		    printf("You work hard!");
-        }break;
-	   case Race::Teklan: {
-		   printf("You are very stong!!");
-	   }break;
-	   case Race::Ivyn: {
-		   printf("You are great leader");
-	   }break;
-	   case Race::Moiran: {
-		   printf("My, how versatile you are!");
-	   }break;
-	   case Race::Camite: {
-		   printf("You're incredibly helpful ");
-	   }break;
-	   case Race::Julian: {
-		   printf("Anything you wont!");
-	   }break;
-	   default: {
-		   printf("Error: unkown racw!");
-	   }
+//int main() {
+//	Race race = Race::Moiran;
+//	switch (race) {
+//	   case Race::Dinan: {
+//		    printf("You work hard!");
+//        }break;
+//	   case Race::Teklan: {
+//		   printf("You are very stong!!");
+//	   }break;
+//	   case Race::Ivyn: {
+//		   printf("You are great leader");
+//	   }break;
+//	   case Race::Moiran: {
+//		   printf("My, how versatile you are!");
+//	   }break;
+//	   case Race::Camite: {
+//		   printf("You're incredibly helpful ");
+//	   }break;
+//	   case Race::Julian: {
+//		   printf("Anything you wont!");
+//	   }break;
+//	   default: {
+//		   printf("Error: unkown racw!");
+//	   }
+//
+//	}
+//}
+
+////struct Book
+////{
+////	char name[256];
+////	int year;
+////	int page;
+////	bool hardcover;
+////};
+////
+////union Variant
+////{
+////	char string[10];
+////	int integer;
+////	double float_point;
+////};
+////int main(){
+////
+////	Book neuromancer;
+////	neuromancer.page = 271;
+////	printf("Neuromancer has %d pages\n", neuromancer.page);
+////
+////
+////}
+////
+////struct ClockOfTheLongNow {
+////	ClockOfTheLongNow(int year_in) {
+////		if (!set_year(year_in))
+////		{
+////			year = 2019;
+////		}
+////	}
+////	int year;
+////	public:
+////	void add_year() {
+////		year++;
+////	}
+////	bool set_year(int new_year) {
+////		if (new_year < 2019) return false;
+////		year = new_year;
+////		return true;
+////	}
+////	int get_year() {
+////		return year;
+////	}
+////};
+////
+////int main() {
+////	ClockOfTheLongNow clock{2020};
+////
+////	printf("year: %d", clock.get_year());
+////
+////
+////}
+//
+//struct PodSruct {
+//	float a;
+//	char b[256];
+//	bool c;
+//
+//};
+//int main() {
+//	PodSruct init_pod1{};
+//	PodSruct init_pod2 = {};
+//	
+//	PodSruct init_pod3{42, "Hellow World"}; 
+//	PodSruct init_pod4{42, "Hellow World", true};
+//}
+enum class Operation
+{
+	Add,
+    Subtract,
+	Multypy,
+	Devide
+};
+struct Calculator
+{
+	Calculator()
+	{
+		Operation operator;
+	}
+
+	int calculate(int a, int b) {
+		switch (operator)
+		{
+			case operator::Add {
+			}break;
+
+
+		default:
+			break;
+		}
+    
 
 	}
-}
-
+};
