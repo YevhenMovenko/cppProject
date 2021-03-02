@@ -1,201 +1,89 @@
 #include <cstdio>
 #include<cstddef>
+#include<iostream>
+using namespace std;
+//int main()
+//{
+//	int gettysburg{};
 //
-//double step_function(int x, double y) {
-//	int resultX = 0;
-//	if (x < 0) {
-//		resultX = -1;
-//	}
-//	else	if (x > 0) {
-//		resultX = 1;
-//	}
-//	double resultY = y * 0.1;
-//	return resultX ;
-//}
-//void main() {
-//	int  A, B, C;
-//	double X, Y, Z, out1X, out2Y, out3Z;
-//	int out1, out2, out3;
+//	int* gettysburg_address = &gettysburg;
 //
-//	out1 = step_function(A = 20, X = .2);
-//	out2 = step_function(B = -20, Y = 0.3);
-//	out3 = step_function(C = 0, Z = .4);
-//	printf(" out1 = %d\n out2 = %f\n out3 = %f\n", out1, out2, out3);
+//	printf("Value at gettysbrg_addres: %d \n", *gettysburg_address);
+//	printf("Gettysburg Address: %p \n", gettysburg_address);
 //
-//	//return 0;
-//}
-//int main() {
-//	unsigned short a = 0b10101010;
-//	printf("%hu\b wewewe", a);
-//	int b = 0123;
-//	printf("%d\n", b);
-//	unsigned long long d = 0xFFFFFFFFFFFFFFFF;
-//	printf("%llu\f\n", d);
-//	char as = 0.33;
-//	std::size_t size_c = sizeof(as);
-//	printf("chae: %zx\n", size_c);
-//	char ch = 'A';
-//	int arr[] = {1, 2, 3, ch};
+//	*gettysburg_address = 17325;
 //
-//	printf("arr[] = %c\n ", arr[3]);
-//
+//	printf("Value at gettysbrg_addres: %d \n", *gettysburg_address);
+//	printf("Gettysburg Address: %p \n", gettysburg_address);
 //}
 
-//int main() {
-//	unsigned long maximum = 0;
-//	unsigned long value[] = { 10, 20, 30, 0, 0 };
-//	//for (size_t i = 0; i < 5; i++) {
-//	//	if (value[i] > maximum)maximum = value[i];
-//	//}
-//	//printf("Type maximum value is %lu", maximum);
-//
-//	for (unsigned long i : value) {
-//		if (i > maximum)maximum = i;
+//struct ClockOfTheLongNow {
+//	ClockOfTheLongNow() {
+//	year = 2019;	
 //	}
-//	printf("Type maximum value is %lu\n", maximum);
-//
-//	char alfabeta[27];
-//	for (int i = 0; i < 26; i++) {
-//		alfabeta[i] = i + 97;
+//	int year;
+//	public:
+//	void add_year() {
+//		year++;
 //	}
-//	alfabeta[26] = 0;
-//	printf("%s\n ", alfabeta);
-//
-//	for (int i = 0; i < 26; i++) {
-//		alfabeta[i] = i + 65;
+//	bool set_year(int new_year) {
+//		if (new_year < 2019) return false;
+//		year = new_year;
+//		return true;
 //	}
-//		printf("%s\n", alfabeta);
+//	int get_year() {
+//		return year;
 //	}
-
-//enum class Race {
-//	Dinan,
-//	Teklan,
-//	Ivyn,
-//	Moiran,
-//	Camite,
-//	Julian,
-//	Aidan
 //};
-
-//int main() {
-//	Race race = Race::Moiran;
-//	switch (race) {
-//	   case Race::Dinan: {
-//		    printf("You work hard!");
-//        }break;
-//	   case Race::Teklan: {
-//		   printf("You are very stong!!");
-//	   }break;
-//	   case Race::Ivyn: {
-//		   printf("You are great leader");
-//	   }break;
-//	   case Race::Moiran: {
-//		   printf("My, how versatile you are!");
-//	   }break;
-//	   case Race::Camite: {
-//		   printf("You're incredibly helpful ");
-//	   }break;
-//	   case Race::Julian: {
-//		   printf("Anything you wont!");
-//	   }break;
-//	   default: {
-//		   printf("Error: unkown racw!");
-//	   }
 //
-//	}
-//}
-
-////struct Book
-////{
-////	char name[256];
-////	int year;
-////	int page;
-////	bool hardcover;
-////};
-////
-////union Variant
-////{
-////	char string[10];
-////	int integer;
-////	double float_point;
-////};
-////int main(){
-////
-////	Book neuromancer;
-////	neuromancer.page = 271;
-////	printf("Neuromancer has %d pages\n", neuromancer.page);
-////
-////
-////}
-////
-////struct ClockOfTheLongNow {
-////	ClockOfTheLongNow(int year_in) {
-////		if (!set_year(year_in))
-////		{
-////			year = 2019;
-////		}
-////	}
-////	int year;
-////	public:
-////	void add_year() {
-////		year++;
-////	}
-////	bool set_year(int new_year) {
-////		if (new_year < 2019) return false;
-////		year = new_year;
-////		return true;
-////	}
-////	int get_year() {
-////		return year;
-////	}
-////};
-////
-////int main() {
-////	ClockOfTheLongNow clock{2020};
-////
-////	printf("year: %d", clock.get_year());
-////
-////
-////}
+//int main(){
 //
-//struct PodSruct {
-//	float a;
-//	char b[256];
-//	bool c;
+//	ClockOfTheLongNow clock;
+//	ClockOfTheLongNow* clock_ptr = &clock;
+//	clock_ptr->set_year(2020);
+//
+//	printf("Address of clock: %p \n", clock_ptr);
+//	printf("Value of clock's year: %d \n", clock_ptr->get_year());
+//	printf("Var2 Value of clock's year: %d \n", (*clock_ptr).get_year());
 //
 //};
-//int main() {
-//	PodSruct init_pod1{};
-//	PodSruct init_pod2 = {};
-//	
-//	PodSruct init_pod3{42, "Hellow World"}; 
-//	PodSruct init_pod4{42, "Hellow World", true};
+//
+//struct College {
+//	char name[256];
+//};
+//
+//void print_name(College* colleges, size_t n_colleges) {
+//	for (size_t i = 0; i < n_colleges; i++) {
+//		printf("%s Collage \n", colleges[i].name);
+//	}
 //}
-enum class Operation
-{
-	Add,
-    Subtract,
-	Multypy,
-	Devide
-};
-struct Calculator
-{
-	Calculator()
-	{
-		Operation operator;
-	}
+//int main() {
+//	College oxford[] = { "Magdalen", "Nuffield", "Kellog" };
+//	print_name(oxford, sizeof(oxford)/sizeof(College));
+//}
 
-	int calculate(int a, int b) {
-		switch (operator)
-		{
-			case operator::Add {
-			}break;
+//int main() {
+//	char lower[] = "abc?e";
+//	char upper[] = "ABC?E";
+//	char* upper_ptr = upper;
+//	lower[3] = 'd';
+//	upper_ptr[3] = 'D';
+//
+//	char letter_d = lower[3];
+//	char letter_D = upper_ptr[3];
+//
+//	printf("Lower: %s\nupper: %s", lower, upper);
+// }
+int main() {
+	char lower[] = "abc?e";
+	char upper[] = "ABC?E";
+	char* upper_ptr = &upper[0];
+	*(lower+3) = 'd';
+	*(upper_ptr +3) = 'D';
 
+	char letter_d = *(lower + 4);
+	char letter_D = *(upper_ptr + 4);
 
-		default:
-			break;
-		}
-    
+	printf("Lower: %s\nupper: %s", lower, upper);
 
-	}
-};
+}

@@ -33,3 +33,5 @@
 
 #Vesual Studio
 .vs
+**/.vs/
+**/Debug/
