@@ -23,9 +23,9 @@ using namespace std;
 //	}
 //	int year;
 //	public:
-//	void add_year() {
-//		year++;
-//	}
+//	//void add_year() {
+//	//	year++;
+//	//}
 //	bool set_year(int new_year) {
 //		if (new_year < 2019) return false;
 //		year = new_year;
@@ -74,16 +74,107 @@ using namespace std;
 //
 //	printf("Lower: %s\nupper: %s", lower, upper);
 // }
+//int main() {
+//	char lower[] = "abc?e";
+//	char upper[] = "ABC?E";
+//	char* upper_ptr = &upper[0];
+//	*(lower+3) = 'd';
+//	*(upper_ptr +3) = 'D';
+//
+//	char letter_d = *(lower + 4);
+//	char letter_D = *(upper_ptr + 4);
+//
+//	printf("Lower: %s\nupper: %s", lower, upper);
+//
+//}
+//struct ClockOfTheLongNow {
+//	ClockOfTheLongNow() {
+//		year = 2019;
+//	}
+//	int year;
+//public:
+//
+//	bool set_year(int new_year) {
+//		if (new_year < 2019) return false;
+//		year = new_year;
+//		return true;
+//	}
+//	int get_year() {
+//		return year;
+//	}
+//};
+//void add_year(ClockOfTheLongNow& clock) {
+//	clock.set_year(clock.get_year() + 1);
+//}
+//int main() {
+//	ClockOfTheLongNow clock;
+//	printf("The year is %d.\n", clock.get_year());
+//	add_year(clock);
+//	printf("The year is %d.\n", clock.get_year());
+//}
+//struct Element {
+//	Element* next{};
+//	void insert_after(Element* new_element) {
+//		new_element->next = next;
+//		next = new_element;
+//	}
+//	char prefix[2];
+//	short operating_number;
+//};
+//
+//struct Element {
+//	Element* next{};
+//	void insert_after(Element* new_element) {
+//		new_element->next = this->next;
+//		this->next = new_element;
+//	}
+//	char prefix[2];
+//
+//	short operating_number;
+//};
+//
+//int main(){
+//	Element trooper1, trooper2, trooper3;
+//	trooper1.prefix[0] = 'T';
+//	trooper1.prefix[1] = 'K';
+//	trooper1.operating_number = 421;
+//	trooper1.insert_after(&trooper2);
+//	
+//	trooper2.prefix[0] = 'N';
+//	trooper2.prefix[1] = 'F';
+//    trooper2.operating_number = 2187;
+//	trooper2.insert_after(&trooper3);
+//	
+//	trooper3.prefix[0] = 'L';
+//	trooper3.prefix[1] = 'S';
+//	trooper3.operating_number = 2187;
+//
+//
+//	for (Element* cursor = &trooper1; cursor; cursor = cursor -> next) {
+//		printf("stormtrops %c%c-%d\n",
+//			cursor -> prefix[0],
+//			cursor -> prefix[1],
+//			cursor -> operating_number);
+//	}
+//}
 int main() {
-	char lower[] = "abc?e";
-	char upper[] = "ABC?E";
-	char* upper_ptr = &upper[0];
-	*(lower+3) = 'd';
-	*(upper_ptr +3) = 'D';
-
-	char letter_d = *(lower + 4);
-	char letter_D = *(upper_ptr + 4);
-
-	printf("Lower: %s\nupper: %s", lower, upper);
+	int i = 1, u = 1, sum = 0;
+	while (i<=500)
+	{
+		while (u <=500)
+		{
+			if (u < i) {
+				if (i % u == 0)
+					sum = sum + u;
+			}
+			u++;
+		}
+		if (sum == i) {
+			cout << i << " " << "\n";
+		}
+		i++;
+		u = 1;
+		sum = 0;
+	}
 
 }
