@@ -1,7 +1,10 @@
-#include <cstdio>
-#include<cstddef>
-#include<iostream>
-using namespace std;
+//#include <cstdio>
+//#include<cstddef>
+//#include<iostream>
+//#include <iostream>     // std::cout
+//#include <algorithm>    // std::all_of
+//#include <array>        // std::array
+//using namespace std;
 //int main()
 //{
 //	int gettysburg{};
@@ -157,3 +160,34 @@ using namespace std;
 //			cursor -> operating_number);
 //	}
 //}
+// all_of example
+
+
+//int main() {
+//    array<int, 9> foo = { 3,5,7,4,13,17,19,23, 6 };
+//
+//    if (all_of(foo.begin(), foo.end(), [](int i){return i % 2; }))
+//        cout << "All the elements are odd numbers.\n";
+//    else {
+//        cout << "Not all element is odd.\n";
+//    }
+//    return 0;
+//}
+#include <stdio.h>
+
+int main()
+{
+	FILE* pFile;
+	char buffer1[] =  "Hellow Yevhen";
+	char buffer2[] = "Hellow again";
+	pFile = fopen("myfile1.txt", "w");
+	if (pFile == NULL) {
+		fwrite(buffer1, sizeof(char), sizeof(buffer1), pFile);
+	}
+	else {
+		fwrite(buffer2, sizeof(char), sizeof(buffer2), pFile);
+	}
+	fclose(pFile);
+
+	return 0;
+}
