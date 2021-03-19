@@ -1,2 +1,3 @@
 ﻿  main.cpp
-  cppStartWork.vcxproj -> C:\Users\yemo\projects\cpp\cppProject\cppStartWork\Debug\cppStartWork.exe
+C:\Users\yemov.DESKTOP-QT9FC69\projects\cpp\cppProject\cppStartWork\main.cpp(5,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\yemov.DESKTOP-QT9FC69\projects\cpp\cppProject\cppStartWork\main.cpp(7): error C4700: uninitialized local variable 'my_ptr' used
