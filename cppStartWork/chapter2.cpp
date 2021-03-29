@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 //#include <cstdio>
 //#include<cstddef>
+=======
+#include <cstdio>
+#include<cstddef>
+>>>>>>> f7576e40f3da935c8839705d4c57a6e8dbbd4307
 //
 //double step_function(int x, double y) {
 //	int resultX = 0;
@@ -170,6 +175,7 @@
 //	
 //	PodSruct init_pod3{42, "Hellow World"}; 
 //	PodSruct init_pod4{42, "Hellow World", true};
+<<<<<<< HEAD
 ////}
 //enum class Operation
 //{
@@ -219,3 +225,34 @@
 //
 //	printf("c = %f", c);
 //}
+=======
+//}
+////enum class Operation
+////{
+////	Add,
+////	Subtract,
+////	Multypy,
+////	Devide
+////};
+////struct Calculator
+////{
+////	Calculator()
+////	{
+////		Operation operator;
+////	}
+////
+////	int calculate(int a, int b) {
+////		switch (operator)
+////		{
+////			case operator::Add{
+////			}break;
+////
+////
+////			default:
+////				break;
+////		}
+////
+////
+////	}
+////};
+>>>>>>> f7576e40f3da935c8839705d4c57a6e8dbbd4307
