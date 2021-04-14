@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-//#include <cstdio>
-//#include<cstddef>
-=======
+
 #include <cstdio>
 #include<cstddef>
->>>>>>> f7576e40f3da935c8839705d4c57a6e8dbbd4307
 //
 //double step_function(int x, double y) {
 //	int resultX = 0;
@@ -255,4 +251,3 @@
 ////
 ////	}
 ////};
->>>>>>> f7576e40f3da935c8839705d4c57a6e8dbbd4307
