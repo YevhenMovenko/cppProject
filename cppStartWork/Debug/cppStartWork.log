@@ -1,5 +1,2 @@
 ﻿  chapter2.cpp
-C:\Users\yemov.DESKTOP-QT9FC69\projects\cpp\cppProject\cppStartWork\chapter2.cpp(174,1): error C2059: syntax error: '<<'
-  main.cpp
-C:\Users\yemov.DESKTOP-QT9FC69\projects\cpp\cppProject\cppStartWork\main.cpp(186,10): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Generating Code...
+  cppStartWork.vcxproj -> C:\Users\yemov.DESKTOP-QT9FC69\projects\cpp\cppProject\cppStartWork\Debug\cppStartWork.exe

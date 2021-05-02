@@ -13,13 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\capter2">
+      <UniqueIdentifier>{5cd39ca6-ba29-447b-acdc-4bab1977a4b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="chapter2.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\capter2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
